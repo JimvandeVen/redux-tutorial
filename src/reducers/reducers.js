@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { VisibilityFilters } from '../actions/actions'
 import { combineReducers } from 'redux'
 

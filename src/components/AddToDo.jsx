@@ -1,10 +1,9 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
-import { connect } from 'react-redux'
-import { addTodo } from '../actions/actions'
+import PropTypes from 'prop-types'
 
 // eslint-disable-next-line import/no-mutable-exports
-let AddTodo = ({ dispatch }) => {
+const AddTodo = ({ submitTodo }) => {
   let input
 
   return (
@@ -15,7 +14,7 @@ let AddTodo = ({ dispatch }) => {
           if (!input.value.trim()) {
             return
           }
-          dispatch(addTodo(input.value))
+          submitTodo(input.value)
           input.value = ''
         }}
       >
@@ -30,6 +29,8 @@ let AddTodo = ({ dispatch }) => {
   )
 }
 
-AddTodo = connect()(AddTodo)
+AddTodo.propTypes = {
+  submitTodo: PropTypes.func.isRequired,
+}
 
 export default AddTodo

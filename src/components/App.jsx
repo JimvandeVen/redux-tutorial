@@ -1,12 +1,12 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
+import ConnectedAddTodo from '../containers/ConnectedAddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 
 const App = () => (
   <div>
-    <AddTodo />
+    <ConnectedAddTodo />
     <VisibleTodoList />
     <Footer />
   </div>
