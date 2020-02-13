@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react'
 import FilterLink from '../containers/FilterLink'
-import { VisibilityFilters } from '../actions'
+import { VisibilityFilters } from '../actions/actions'
 
 const Footer = () => (
   <p>
